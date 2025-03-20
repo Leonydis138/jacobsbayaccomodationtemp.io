@@ -3,107 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob's Bay Accommodations</title>
+    <meta name="description" content="Jacobsbay Accommodation - Relax and unwind in beautiful coastal comfort.">
+    <meta name="keywords" content="Jacobsbay, accommodation, coastal stay, vacation rental, South Africa">
+    <meta name="author" content="Jacobsbay Accommodation">
+    <title>Jacobsbay Accommodation</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #00796b;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            margin: 10px 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .hero {
-            height: 400px;
-            background-image: url('your-image-url.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-        }
-        .accommodations {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .accommodation {
-            border: 1px solid #ccc;
-            padding: 10px;
-            width: 30%;
-            text-align: center;
-        }
-        footer {
-            background: #00796b;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="preload" href="hero.jpg" as="image">
 </head>
 <body>
+    <header>
+        <h1>Welcome to Jacobsbay Accommodation</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Jacob's Bay Accommodations</h1>
-    <nav>
-        <a href="#accommodations">Accommodations</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-</header>
+    <section id="home">
+        <img src="hero.jpg" alt="Beautiful view of Jacobsbay coastline">
+        <p>Experience tranquility and comfort with our seaside accommodations.</p>
+    </section>
 
-<div class="hero">
-    <h2>Your Perfect Getaway Awaits</h2>
-</div>
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room-list">
+            <div class="room">
+                <img src="room1.jpg" alt="Cozy double room with ocean view">
+                <p>Cozy Double Room - Ocean View</p>
+            </div>
+            <div class="room">
+                <img src="room2.jpg" alt="Spacious family room with garden access">
+                <p>Family Room - Garden Access</p>
+            </div>
+        </div>
+    </section>
 
-<section id="accommodations" class="accommodations">
-    <div class="accommodation">
-        <h3>Accommodation 1</h3>
-        <p>Description of accommodation 1.</p>
-        <a href="link-to-booking-1.html">Book Now</a>
-    </div>
-    <div class="accommodation">
-        <h3>Accommodation 2</h3>
-        <p>Description of accommodation 2.</p>
-        <a href="link-to-booking-2.html">Book Now</a>
-    </div>
-    <div class="accommodation">
-        <h3>Accommodation 3</h3>
-        <p>Description of accommodation 3.</p>
-        <a href="link-to-booking-3.html">Book Now</a>
-    </div>
-</section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="gallery1.jpg" alt="Sunset over Jacobsbay">
+            <img src="gallery2.jpg" alt="Jacobsbay beach">
+            <img src="gallery3.jpg" alt="Cozy lounge area">
+        </div>
+    </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@jacobsbayaccommodations.co.za">info@jacobsbayaccommodations.co.za</a></p>
-    <p>Phone: <a href="tel:+123456789">+12 345 6789</a></p>
-</section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-<footer>
-    <p>Follow us on:</p>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-</footer>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jacobsbay Accommodation. All rights reserved.</p>
+        <a href="#home">Back to top</a>
+    </footer>
 </body>
 </html>
